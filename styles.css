@@ -1,0 +1,80 @@
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900 */
+
+.noto-serif-display {
+  font-family: "Noto Serif Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings: "width" 100;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #545d81;
+}
+
+.jumbotronBg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-image: url("/images/Triangle_pose.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+  height: 55vh;
+}
+
+.jumbotronContent {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.hero-text {
+  font-family: "Noto Serif Display", serif;
+  letter-spacing: 0.25rem;
+  color: white;
+}
+
+.hero-text h1 {
+  font-size: 5rem;
+  font-weight: 300;
+}
+
+.navbar-brand img {
+  margin-right: 10px;
+}
+
+.fa-icon {
+  margin-bottom: 2rem;
+}
+
+.outline {
+  padding: 0rem 2rem;
+}
+
+.card {
+  margin-top: 20px;
+}
+
+.card-title {
+  color: #545d81;
+}
+
+.card-text {
+    text-align: left;
+ }
+h2, h1 {
+  font-family: "Noto Serif Display", serif;
+}
+
+#services h3 {
+  font-family: "Noto Serif Display", serif;
+}
+
+#instructors h5 {
+  color: #545d81;
+}
