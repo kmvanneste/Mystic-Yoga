@@ -9,9 +9,24 @@
   font-variation-settings: "width" 100;
 }
 
+.noto-sans-display {
+  font-family: "Noto Sans Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings: "width" 100;
+}
+
 body {
   font-family: Arial, sans-serif;
   color: #545d81;
+}
+
+.start-now-nav {
+  border: solid #3e4960 1px;
+  border-radius: 5px;
+  margin: 0rem 0.1rem;
+  letter-spacing: 0.5px;
 }
 
 .jumbotronBg {
@@ -20,7 +35,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center right;
-  height: 55vh;
+  height: 60vh;
+  position: relative;
 }
 
 .jumbotronContent {
@@ -31,6 +47,14 @@ body {
   justify-content: center;
   align-items: center;
   padding: 2rem;
+}
+
+.bookingJumbotronContent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
 }
 
 .hero-text {
@@ -44,8 +68,27 @@ body {
   font-weight: 300;
 }
 
-.navbar-brand img {
-  margin-right: 10px;
+.inspiration-section {
+  position: absolute;
+  top: 73%; /* Adjust this value to position the box over the jumbotron */
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the box horizontally */
+  background-color: #ffffff;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow to enhance the floating effect */
+  padding: 2.5rem 8rem;
+  z-index: 10; /* Make sure it appears above the jumbotron */
+  text-align: center;
+  font-weight: 400;
+  color: #3d485f;
+  font-size: 20px;
+  min-width: 95%; /* Adjust width to your liking */
+  border-radius: 2px; /* Add a soft edge */
+  font-family: "Noto Sans Display", sans-serif;
+}
+
+#services {
+  padding-top: 10.5rem;
+  padding-bottom: 3rem;
 }
 
 .fa-icon {
@@ -65,9 +108,11 @@ body {
 }
 
 .card-text {
-    text-align: left;
- }
-h2, h1 {
+  text-align: left;
+}
+
+h2,
+h1 {
   font-family: "Noto Serif Display", serif;
 }
 
@@ -77,4 +122,34 @@ h2, h1 {
 
 #instructors h5 {
   color: #545d81;
+}
+
+.start-btn {
+  background-color: #535e80;
+  color: white;
+  width: 18rem;
+  line-height: 3rem;
+  font-size: 22px;
+  font-family: "Noto Sans Display", sans-serif;
+  letter-spacing: 2.2px;
+  padding: 1rem;
+}
+
+.start-btn:hover {
+  background-color: #3e4960;
+  color: white;
+}
+
+.btn {
+  background-color: #535e80;
+  color: white;
+  font-size: 16px;
+  font-family: "Noto Sans Display", sans-serif;
+  letter-spacing: 1px;
+  padding: 0.4rem 1.5rem;
+}
+
+.btn:hover {
+  background-color: #3e4960;
+  color: white;
 }
