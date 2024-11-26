@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testimonials</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-transparent fixed-top">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="booking.html">Join Now</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="testimonials.html">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="jumbotron testimonialJumbotronBg p-0 m-0">
+      <div class="jumbotronContent">
+        <div class="hero-text">
+          <h1>
+            <!-- <span
+              style="margin-left: -2rem; margin-right: -2.1rem; color: white"
+            >
+              MYSTIC
+            </span>
+            <img
+              src="images/Moon White bg.png"
+              alt="Mystic Yoga Logo"
+              height="310"
+            />
+            <span style="margin-left: -8.5rem; color: white"> YOGA </span> -->
+            Testimonials
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonial Header -->
+    <header class="text-center py-5 bg-light">
+      <h1 class="mb-4">What Our Clients Say</h1>
+      <button
+        class="btn btn-primary"
+        data-toggle="modal"
+        data-target="#testimonialModal"
+      >
+        Submit Your Testimonial
+      </button>
+    </header>
+
+    <!-- Testimonials Section -->
+    <section class="container py-5">
+      <div class="row" id="testimonial-list">
+        <!-- Testimonials will be dynamically inserted here -->
+      </div>
+    </section>
+
+    <!-- Testimonial Submission Modal -->
+    <div
+      class="modal fade"
+      id="testimonialModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="testimonialModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="testimonialModalLabel">
+              Submit Your Testimonial
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="testimonial-form">
+              <div class="form-group">
+                <label for="name">Your Name (optional)</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Enter your name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="display-option"
+                  >How should we display your name?</label
+                >
+                <select class="form-control" id="display-option">
+                  <option value="full-name">Full Name</option>
+                  <option value="initials">Initials</option>
+                  <option value="anonymous">Anonymous</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="testimonial">Your Testimonial</label>
+                <textarea
+                  class="form-control"
+                  id="testimonial"
+                  rows="3"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <footer class="footer d-flex justify-content-center bg-light">
+      <p>Copyright © Mystic Yoga 2024 • All Rights Reserved</p>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/1a534970d4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

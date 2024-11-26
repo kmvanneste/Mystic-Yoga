@@ -17,7 +17,7 @@
 
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-transparent fixed-top">
       <button
         class="navbar-toggler"
         type="button"
@@ -34,96 +34,179 @@
           <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
           </li>
-          <li class="nav-item start-now-nav">
-            <a class="nav-link" href="booking.html">Start Now</a>
+          <li class="nav-item">
+            <a class="nav-link" href="booking.html">Join Now</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="booking.html#contact">Contact</a>
+            <a class="nav-link" href="testimonials.html">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
     </nav>
 
     <!-- Hero Section -->
-
-    <div class="jumbotron p-0 m-0">
-      <div class="bookingJumbotronContent">
+    <div class="jumbotron bookingJumbotronBg p-0 m-0">
+      <div class="jumbotronContent">
         <div class="hero-text">
           <h1>
-            <span
-              style="margin-left: -2rem; margin-right: -2.1rem; color: black"
+            <!-- <span
+              style="margin-left: -2rem; margin-right: -2.1rem; color: white"
             >
               MYSTIC
             </span>
             <img
-              src="images/Moon BlackLotus NoBg.png"
+              src="images/Moon White bg.png"
               alt="Mystic Yoga Logo"
               height="310"
             />
-            <span style="margin-left: -8.5rem; color: black"> YOGA </span>
+            <span style="margin-left: -8.5rem; color: white"> YOGA </span> -->
+            Let's Begin
           </h1>
         </div>
       </div>
     </div>
 
     <!-- Booking Section -->
-    <section id="booking" class="py-5 text-center">
+    <section id="booking" class="py-5">
       <div class="container">
-        <h1 class="mb-5">Book Your Session</h1>
+        <h1 class="text-center mb-5">Book Your Session</h1>
 
-        <div class="row">
-          <!-- Holistic Wellness Coaching -->
-          <div class="col-md-4 mb-4">
-            <div class="card">
-              <div class="card-body">
-                <h3 class="card-title">Holistic Wellness Coaching</h3>
-                <p class="card-text">
-                  Unlock your full potential with tailored wellness coaching
-                  sessions. Each session is personalized to help you create a
-                  balanced, vibrant lifestyle.
-                </p>
-                <ul>
-                  <li>🕒 30-Minute Coaching Session</li>
-                  <li>🕒 60-Minute Coaching Session</li>
-                </ul>
-                <a href="#" class="btn btn-primary">Book Now</a>
+        <!-- Free Offerings -->
+        <div class="mb-5">
+          <h2 class="text-center mb-4">Start Here</h2>
+          <div class="row">
+            <div class="col-md-6 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h3 class="card-title">20-Minute Virtual Consultation</h3>
+                  <p class="card-text">
+                    Schedule a free consultation to discuss your wellness goals
+                    and discover the best offerings for your needs.
+                  </p>
+                  <a href="#" class="btn btn-primary">Book Now</a>
+                </div>
               </div>
             </div>
-          </div>
 
-          <!-- Yoga Classes -->
-          <div class="col-md-4 mb-4">
-            <div class="card">
-              <div class="card-body">
-                <h3 class="card-title">Yoga Classes</h3>
-                <p class="card-text">
-                  Enjoy customized yoga sessions tailored to your needs, or
-                  choose from Flow, Yin, or Restorative yoga.
-                </p>
-                <ul>
-                  <li>🕒 30-Minute Yoga Class</li>
-                  <li>🕒 60-Minute Yoga Class</li>
-                </ul>
-                <a href="#" class="btn btn-primary">Book Now</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- 8-Week Workshop -->
-          <div class="col-md-4 mb-4">
-            <div class="card">
-              <div class="card-body">
-                <h3 class="card-title">8-Week Wellness Workshop</h3>
-                <p class="card-text">
-                  Take a transformative journey to create and integrate new
-                  habits, with 1:1 coaching, lifestyle detox, and step-by-step
-                  guidance.
-                </p>
-                <a href="#" class="btn btn-primary">Book Now</a>
+            <div class="col-md-6 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h3 class="card-title">Free Guided Meditations</h3>
+                  <p class="card-text">
+                    Access a library of guided meditations on Insight Timer to
+                    nurture your body, mind, and soul.
+                  </p>
+                  <a
+                    href="https://insighttimer.com"
+                    target="_blank"
+                    class="btn btn-primary"
+                  >
+                    Explore Now
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
+
+        <div class="mb-5">
+          <h2 class="text-center mb-4">Programs</h2>
+          <div class="row">
+            <!-- 8-Week Deep Detox -->
+            <div class="col-md-6 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h3 class="card-title">The Deep Detox</h3>
+                  <p class="card-text">
+                    Spend eight weeks cleaning up your diet and environment to
+                    pave the way for emotional, spiritual, and mental healing.
+                  </p>
+                  <div class="collapse" id="detoxDetails">
+                    <p class="card-text">
+                      This program includes personalized meal plans, shopping
+                      lists, and guided detoxification steps to remove toxins
+                      and revitalize your lifestyle.
+                    </p>
+                  </div>
+                  <button
+                    class="btn btn-primary"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#detoxDetails"
+                    aria-expanded="false"
+                    aria-controls="detoxDetails"
+                  >
+                    Show More
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Women Who Cleanse -->
+            <div class="col-md-6 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h3 class="card-title">Women Who Cleanse</h3>
+                  <p class="card-text">
+                    Join a supportive group of women to participate in the
+                    Medical Medium 3:6:9 cleanse with guidance and
+                    accountability.
+                  </p>
+                  <div class="collapse" id="cleanseDetails">
+                    <p class="card-text">
+                      You'll receive step-by-step instructions for preparing for
+                      the cleanse, access to community support, and daily
+                      check-ins to keep you on track.
+                    </p>
+                  </div>
+                  <button
+                    class="btn btn-primary"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#cleanseDetails"
+                    aria-expanded="false"
+                    aria-controls="cleanseDetails"
+                  >
+                    Show More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Crescent Coven Membership -->
+          <div class="row">
+            <div class="col-12">
+              <div class="card">
+                <div class="card-body">
+                  <h3 class="card-title">Crescent Coven Membership</h3>
+                  <p class="card-text">
+                    Enjoy live events, workshops, meditations, a free tarot
+                    reading, and a bi-weekly newsletter as a member.
+                  </p>
+                  <a href="#" class="btn btn-primary">Join Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Banner -->
+    <section id="testimonials-banner" class="py-5 text-center text-white">
+      <div class="container">
+        <h2 class="mb-4">What Our Clients Say</h2>
+        <p class="mb-4">
+          Discover how Mystic Yoga has transformed lives with our unique
+          approach.
+        </p>
+        <a href="testimonials.html" class="btn btn-lg btn-light"
+          >Read Testimonials</a
+        >
       </div>
     </section>
 
@@ -131,10 +214,19 @@
     <section id="contact" class="py-5 text-center bg-light">
       <div class="container">
         <h2 class="mb-4">Contact Mystic Yoga</h2>
-        <p>contact@thisismysticyoga.com</p>
-        <!-- <p>Phone: +1 234 567 890</p> -->
+        <p>
+          Email:
+          <a href="mailto:contact@thisismysticyoga.com"
+            >contact@thisismysticyoga.com</a
+          >
+        </p>
       </div>
     </section>
+
+    <!-- Copyright -->
+    <footer class="footer d-flex justify-content-center bg-light">
+      <p>Copyright © Mystic Yoga 2024 • All Rights Reserved</p>
+    </footer>
 
     <script
       src="https://kit.fontawesome.com/1a534970d4.js"
@@ -143,5 +235,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

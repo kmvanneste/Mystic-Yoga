@@ -1,5 +1,8 @@
-/* // <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 900 */
+/* Font Families */
+body {
+  font-family: Arial, sans-serif;
+  color: #535e80;
+}
 
 .noto-serif-display {
   font-family: "Noto Serif Display", serif;
@@ -19,23 +22,111 @@
 
 body {
   font-family: Arial, sans-serif;
-  color: #545d81;
+  color: #535e80;
+}
+
+/* Default transparent navbar */
+.navbar-transparent {
+  background-color: transparent;
+  transition: background-color 0.5s ease, box-shadow 0.5s ease;
+  padding: 0.7rem 3rem 1.4rem 3rem;
+  color: white;
+}
+
+.navbar-transparent .nav-link {
+  color: white;
+  text-decoration: none; /* Remove default underline */
+  position: relative; /* For the underline pseudo-element */
+  transition: color 0.5s ease;
+}
+
+.navbar-transparent .nav-link:hover {
+  color: #f8f9fa; /* Slightly lighter on hover */
+}
+
+.navbar-transparent .nav-link:hover::after,
+.navbar-transparent .nav-item.active .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px; /* Adjust position of the underline */
+  height: 2px;
+  background-color: white;
+  width: 100%; /* Full width underline */
+  transition: width 0.3s ease;
+}
+
+.navbar-transparent .nav-link::after {
+  width: 0; /* No underline initially */
+}
+
+/* Navbar when scrolled */
+.navbar-scrolled {
+  background-color: white;
+  transition: background-color 0.5s ease, box-shadow 0.5s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 0.7rem 3rem 1.4rem 3rem;
+}
+
+.navbar-scrolled .nav-link {
+  color: #535e80;
+  text-decoration: none; /* Remove default underline */
+  position: relative; /* For the underline pseudo-element */
+}
+
+.navbar-scrolled .nav-link:hover {
+  color: #535e80;
+}
+
+.navbar-scrolled .nav-link:hover::after,
+.navbar-scrolled .nav-item.active .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px; /* Adjust position of the underline */
+  height: 2px;
+  background-color: #535e80; /* Underline color for scrolled navbar */
+  width: 100%; /* Full width underline */
+  transition: width 0.3s ease;
+}
+
+.navbar-scrolled .nav-link::after {
+  width: 0; /* No underline initially */
 }
 
 .start-now-nav {
-  border: solid #3e4960 1px;
-  border-radius: 5px;
-  margin: 0rem 0.1rem;
+  border: none; /* Removed the box border for clean design */
+  margin: 0rem 0.2rem;
   letter-spacing: 0.5px;
 }
 
+/* Navbar spacing adjustments */
+.navbar-nav {
+  align-items: center; /* Vertically center items */
+  gap: 1.5rem; /* Space between nav-items */
+}
+
+.nav-item {
+  margin: 0; /* Remove default margins for nav-items */
+}
+
+.nav-link {
+  padding: 0.5rem 0; /* Adjust padding for better alignment */
+  font-size: 1rem; /* Uniform font size */
+  transition: color 0.3s ease;
+}
+
+header {
+  position: relative;
+}
+
 .jumbotronBg {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  background-image: url("/images/Triangle_pose.jpg");
-  background-repeat: no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url("/images/Triangle_pose.jpg") no-repeat center right;
   background-size: cover;
-  background-position: center right;
-  height: 60vh;
+  height: 80vh;
   position: relative;
 }
 
@@ -49,18 +140,26 @@ body {
   padding: 2rem;
 }
 
-.bookingJumbotronContent {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
+.bookingJumbotronBg {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url("/images/purple_lotus_2.jpeg") no-repeat center right;
+  background-size: cover;
+  height: 80vh;
+  position: relative;
+}
+
+.testimonialJumbotronBg {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url("/images/lavender_goldenlight.jpeg") no-repeat center right;
+  background-size: cover;
+  height: 80vh;
+  position: relative;
 }
 
 .hero-text {
   font-family: "Noto Serif Display", serif;
-  letter-spacing: 0.25rem;
   color: white;
+  letter-spacing: 0.25rem;
 }
 
 .hero-text h1 {
@@ -68,88 +167,153 @@ body {
   font-weight: 300;
 }
 
+/* Inspiration Section */
 .inspiration-section {
   position: absolute;
-  top: 73%; /* Adjust this value to position the box over the jumbotron */
+  top: 85%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Center the box horizontally */
+  transform: translate(-50%, -50%);
   background-color: #ffffff;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow to enhance the floating effect */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
   padding: 2.5rem 8rem;
-  z-index: 10; /* Make sure it appears above the jumbotron */
   text-align: center;
   font-weight: 400;
-  color: #3d485f;
+  color: #535e80;
   font-size: 20px;
-  min-width: 95%; /* Adjust width to your liking */
-  border-radius: 2px; /* Add a soft edge */
+  min-width: 95%;
+  border-radius: 2px;
+  z-index: 10;
   font-family: "Noto Sans Display", sans-serif;
 }
 
+/* Services Section */
 #services {
-  padding-top: 10.5rem;
-  padding-bottom: 3rem;
+  background-color: #f0f4fa;
+  padding: 10.5rem 1rem 3rem;
+}
+
+#services h1,
+#services h2,
+#services h3 {
+  font-family: "Noto Serif Display", serif;
 }
 
 .fa-icon {
   margin-bottom: 2rem;
+  color: #44516c;
 }
 
 .outline {
   padding: 0rem 2rem;
 }
 
-.card {
-  margin-top: 20px;
-}
-
-.card-title {
-  color: #545d81;
-}
-
-.card-text {
-  text-align: left;
-}
-
-h2,
-h1 {
-  font-family: "Noto Serif Display", serif;
-}
-
-#services h3 {
-  font-family: "Noto Serif Display", serif;
-}
-
-#instructors h5 {
-  color: #545d81;
-}
-
-.start-btn {
-  background-color: #535e80;
-  color: white;
-  width: 18rem;
-  line-height: 3rem;
-  font-size: 22px;
-  font-family: "Noto Sans Display", sans-serif;
-  letter-spacing: 2.2px;
-  padding: 1rem;
-}
-
-.start-btn:hover {
-  background-color: #3e4960;
-  color: white;
-}
-
-.btn {
-  background-color: #535e80;
-  color: white;
+/* Buttons */
+button,
+a.btn {
+  background-color: #f0c987;
+  color: #2c2c2c;
   font-size: 16px;
   font-family: "Noto Sans Display", sans-serif;
   letter-spacing: 1px;
   padding: 0.4rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.btn:hover {
-  background-color: #3e4960;
+button:hover,
+a.btn:hover {
+  background-color: #374458;
   color: white;
+}
+
+.start-btn {
+  width: 18rem;
+  line-height: 3rem;
+  font-size: 22px;
+  padding: 1rem;
+  letter-spacing: 2.2px;
+}
+
+.start-btn:hover {
+  background-color: #535e80;
+}
+
+/* Testimonials Banner */
+#testimonials-banner {
+  background: #535e80;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+#testimonials-banner h2 {
+  font-family: "Noto Serif Display", serif;
+}
+
+#testimonials-banner p {
+  font-family: "Noto Sans Display", sans-serif;
+  font-size: 1.1rem;
+}
+
+#testimonials-banner .btn-light {
+  background-color: #f8f9fa;
+  color: #2c2c2c;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#testimonials-banner .btn-light:hover {
+  background-color: #e9ecef;
+  color: #2c2c2c;
+}
+
+/* Navbar */
+.start-now-nav {
+  border: solid #535e80 1px;
+  border-radius: 5px;
+  margin: 0rem 0.1rem;
+  letter-spacing: 0.5px;
+  padding: 0.4rem 1rem;
+  font-family: "Noto Sans Display", sans-serif;
+}
+
+/* Miscellaneous */
+h1,
+h2,
+h3 {
+  font-family: "Noto Serif Display", serif;
+}
+
+.card-title,
+.card-text {
+  color: #535e80;
+}
+
+.card-text {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.card {
+  margin-bottom: 1.5rem;
+}
+
+.card-body {
+  text-align: center; /* Center-align text for a uniform appearance */
+}
+
+.collapse {
+  transition: height 0.3s ease;
+}
+
+#testimonial-list .card {
+  margin: 1rem 0;
+}
+
+.footer {
+  padding: 1px;
+  font-size: 10pt;
 }
