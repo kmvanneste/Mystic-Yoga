@@ -126,7 +126,7 @@ header {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
     url("/images/Triangle_pose.jpg") no-repeat center right;
   background-size: cover;
-  height: 80vh;
+  height: 100vh;
   position: relative;
 }
 
@@ -170,26 +170,43 @@ header {
 /* Inspiration Section */
 .inspiration-section {
   position: absolute;
-  top: 85%;
+  top: 92%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #ffffff;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0);
   padding: 2.5rem 8rem;
   text-align: center;
   font-weight: 400;
-  color: #535e80;
-  font-size: 20px;
+  color: transparent;
+  font-size: 30px;
   min-width: 95%;
   border-radius: 2px;
   z-index: 10;
   font-family: "Noto Sans Display", sans-serif;
 }
 
+.inspiration-section-scroll {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0);
+  padding: 2.5rem 8rem;
+  text-align: center;
+  font-weight: 400;
+  color: white;
+  font-size: 26px;
+  min-width: 95%;
+  z-index: 10;
+  font-family: "Noto Sans Display", sans-serif;
+  transition: color 0.8s ease;
+  text-shadow: #535e80 2px 0 10px;
+}
+
 /* Services Section */
 #services {
   background-color: #f0f4fa;
-  padding: 10.5rem 1rem 3rem;
+  padding: 2rem 1rem 3rem;
 }
 
 #services h1,

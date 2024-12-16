@@ -3,7 +3,7 @@
 // Handle navbar background change on scroll
 window.addEventListener("scroll", function () {
   const navbar = document.querySelector(".navbar");
-  if (window.scrollY > 50) {
+  if (window.scrollY > 200) {
     navbar.classList.add("navbar-scrolled");
   } else {
     navbar.classList.remove("navbar-scrolled");
@@ -25,7 +25,15 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
+// Handle homepage jumbotron background change on scroll
+window.addEventListener("scroll", function () {
+  const inspo = document.querySelector(".inspiration-section");
+  if (window.scrollY > 25) {
+    inspo.classList.add("inspiration-section-scroll");
+  } else {
+    inspo.classList.remove("inspiration-section-scroll");
+  }
+});
 
 
 // TESTIMONIAL MODAL
