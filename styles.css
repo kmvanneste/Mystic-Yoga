@@ -4,6 +4,18 @@ body {
   color: #535e80;
 }
 
+p {
+  font-size: 1.1rem;
+}
+
+h1 {
+  font-size: 2.8rem;
+}
+
+h2 {
+  font-size: 1.9rem;
+}
+
 .noto-serif-display {
   font-family: "Noto Serif Display", serif;
   font-optical-sizing: auto;
@@ -150,7 +162,7 @@ header {
 
 .testimonialJumbotronBg {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-    url("/images/lavender_goldenlight.jpeg") no-repeat center right;
+    url("/images/purpleLotus_1.jpeg") no-repeat center right;
   background-size: cover;
   height: 80vh;
   position: relative;
@@ -163,8 +175,8 @@ header {
 }
 
 .hero-text h1 {
-  font-size: 5rem;
-  font-weight: 300;
+  font-size: 5.1rem;
+  font-weight: 400;
 }
 
 /* Inspiration Section */
@@ -178,7 +190,7 @@ header {
   text-align: center;
   font-weight: 400;
   color: transparent;
-  font-size: 30px;
+  font-size: 26px;
   min-width: 95%;
   border-radius: 2px;
   z-index: 10;
@@ -229,7 +241,7 @@ button,
 a.btn {
   background-color: #f0c987;
   color: #2c2c2c;
-  font-size: 16px;
+  font-size: 20px;
   font-family: "Noto Sans Display", sans-serif;
   letter-spacing: 1px;
   padding: 0.4rem 1.5rem;
@@ -247,7 +259,7 @@ a.btn:hover {
 .start-btn {
   width: 18rem;
   line-height: 3rem;
-  font-size: 22px;
+  font-size: 26px;
   padding: 1rem;
   letter-spacing: 2.2px;
 }
@@ -265,12 +277,12 @@ a.btn:hover {
 }
 
 #testimonials-banner h2 {
-  font-family: "Noto Serif Display", serif;
+  font-family: "Noto Sans Display", sans-serif;
 }
 
 #testimonials-banner p {
   font-family: "Noto Sans Display", sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 #testimonials-banner .btn-light {
