@@ -13,7 +13,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.9rem;
+  font-size: 2rem;
 }
 
 .noto-serif-display {
@@ -130,6 +130,39 @@ body {
   transition: color 0.3s ease;
 }
 
+/* Wrapper to crop the logo */
+.logo-wrapper {
+  height: 40px; /* Adjust this to control how much of the image shows */
+  overflow: hidden; /* Hide parts of the image outside this box */
+  display: flex;
+  align-items: center; /* Center image vertically */
+  justify-content: center;
+}
+
+/* Logo image styles */
+.navbar-logo {
+  height: auto; /* Ensure it maintains its aspect ratio */
+  width: 320px; /* Adjust as needed for your design */
+  transform: translateY(-20%); /* Move image up to crop the top, tweak value */
+  /* transition: all 0.5s ease; */
+}
+
+/* Adjust on scroll */
+.navbar-scrolled .logo-wrapper {
+  height: 55px; /* Slightly increase height on scroll */
+}
+
+.navbar-scrolled .navbar-logo {
+  transform: translateY(4%); /* Reset cropping if needed */
+}
+
+/* Align logo neatly in the navbar */
+.navbar-brand {
+  padding: 0;
+  margin: 0;
+}
+
+
 header {
   position: relative;
 }
@@ -212,7 +245,7 @@ header {
   z-index: 10;
   font-family: "Noto Sans Display", sans-serif;
   transition: color 0.8s ease;
-  text-shadow: #535e80 2px 0 10px;
+  text-shadow: #535e80 5px 0 10px;
 }
 
 /* Services Section */
