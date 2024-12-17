@@ -149,11 +149,11 @@ body {
 
 /* Adjust on scroll */
 .navbar-scrolled .logo-wrapper {
-  height: 55px; /* Slightly increase height on scroll */
+  height: 47px; /* Slightly increase height on scroll */
 }
 
 .navbar-scrolled .navbar-logo {
-  transform: translateY(4%); /* Reset cropping if needed */
+  transform: translateY(3%); /* Reset cropping if needed */
 }
 
 /* Align logo neatly in the navbar */
@@ -189,7 +189,7 @@ header {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
     url("/images/purple_lotus_2.jpeg") no-repeat center right;
   background-size: cover;
-  height: 80vh;
+  height: 100vh;
   position: relative;
 }
 
@@ -197,7 +197,7 @@ header {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
     url("/images/purpleLotus_1.jpeg") no-repeat center right;
   background-size: cover;
-  height: 80vh;
+  height: 100vh;
   position: relative;
 }
 
